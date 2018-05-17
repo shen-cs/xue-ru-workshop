@@ -56,7 +56,6 @@ buck-out/
 .vscode/
 
 # React Native build
-android/
 
 # lock
 package-lock.json

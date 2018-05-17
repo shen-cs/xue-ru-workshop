@@ -1,2 +1,2 @@
-## App as bt controller fo arduino car
+## App as bt controller for arduino car
 
