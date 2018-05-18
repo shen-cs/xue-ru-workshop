@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 #define RX_PIN 5 // connect this pin to HC-05's TX
-#define TX_PIN 6 // connect this pin to HC-06's RX
+#define TX_PIN 6 // connect this pin to HC-05's RX
 
 SoftwareSerial bt(RX_PIN, TX_PIN);
 void setup() {
