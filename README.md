@@ -1,6 +1,17 @@
-## App as bt controller for arduino car
+## BT controller app for arduino car (Android)
 
-### Usage
+
+### Usage for interacting with arduino
+* Download and install [`app-debug.apk`](https://github.com/stationaryfront/xue-ru-workshop/blob/master/android/app/build/outputs/apk/app-debug.apk)
+* Sliders
+  * Slider0 (左馬達） sends `'0:[value]\n'` on sliding. Ex: `'0:100\n'`, `'0:255\n'`
+  * Slider1 (右馬達） sends `'1:[value]\n'` on sliding. Ex: `'1:100\n'`, `'1:255\n'`
+* Buttons
+  * forward, backward, left, right buttons send `'f\n'`, `'b\n'`, `'l\n'`, `'r\n'` respectively **on press in**
+  * Each button sends `'s\n'` **on press out**
+* You can parse data from app messages for arduino use based on the description above
+  
+### Usage for developers
 1. Make sure you have [react-native](https://facebook.github.io/react-native/) installed
 2. Run `npm install`, `react-native link`
 3. To run on android device, run `react-native run-android`
@@ -9,4 +20,4 @@
 
 ### Known Issues
 1. Currently only android is supported, ios maybe malfunctional.
-2. Discovering and pairing device is not supoorted yet, so it is needed to pair the device before using the app.
+2. Discovering and pairing device is not supoorted yet, so it is needed to pair the device before opening the app. (If app is opened before pairing, **kill and restart the app after pairing**)
