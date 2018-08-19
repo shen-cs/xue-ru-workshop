@@ -73,27 +73,27 @@ class Controller extends Component {
             </View>
             <View style={styles.arrowContainer}>
               <View style={styles.upperIconsContainer}>
-                <TouchableOpacity onPress={this.handleTouchable(cmds[0])}>
+                <TouchableOpacity onPressIn={this.handleTouchable(cmds[0])} onPressOut={this.handleTouchable('s')}>
                   <Icon name="play-arrow"
                     size={80}
-                    style={{transform: [{rotate: '-90deg'}]}}
+                    style={{transform: [{rotate: '-90deg'}]}}i
                     color="#000"/>
                 </TouchableOpacity>
               </View>
               <View style={styles.lowerIconsContainer}>
-                <TouchableOpacity onPress={this.handleTouchable(cmds[1])}>
+                <TouchableOpacity onPressIn={this.handleTouchable(cmds[1])} onPressOut={this.handleTouchable('s')}>
                   <Icon name="play-arrow"
                     size={80}
                     style={{transform: [{rotate: '180deg'}]}}
                     color="#000"/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={this.handleTouchable(cmds[2])}>
+                <TouchableOpacity onPressIn={this.handleTouchable(cmds[2])} onPressOut={this.handleTouchable('s')}>
                   <Icon name="play-arrow"
                     size={80}
                     style={{transform: [{rotate: '90deg'}]}}
                     color="#000"/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={this.handleTouchable(cmds[3])}>
+                <TouchableOpacity onPressIn={this.handleTouchable(cmds[3])} onPressOut={this.handleTouchable('s')}>
                   <Icon name="play-arrow"
                     size={80}
                     color="#000"/>
@@ -128,8 +128,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   slidersContainer: {
-    // flex: 2,
+    flex: 1,
     alignItems: 'stretch',
+    justifyContent: 'center',
+    marginBottom: -20,
   },
   sliderTitleContainer: {
     flexDirection: 'row',
@@ -139,7 +141,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
   },
   sliderContainer: {
-    marginBottom: 10,
+    marginBottom: 15,
   },
   arrowContainer: {
     flex: 1,
