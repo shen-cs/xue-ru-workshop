@@ -32,7 +32,7 @@ class Controller extends Component {
   }
   handleSlide = index => val => {
     const rounded = Math.floor(val);
-    const msg = `${index}:${rounded}\n`;
+    const msg = `${slidersConfig[index].chr}${rounded}\n`;
     // console.log(msg);
     let sliderVals = this.state.sliderVals.slice();
     sliderVals[index] = rounded;

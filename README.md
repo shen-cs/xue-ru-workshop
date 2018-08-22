@@ -4,8 +4,8 @@
 ### Usage for interacting with arduino
 * Download and install [`app-debug.apk`](https://github.com/stationaryfront/xue-ru-workshop/blob/master/android/app/build/outputs/apk/app-debug.apk)
 * Sliders
-  * Slider0 (左馬達） sends `'0:[value]\n'` on sliding. Ex: `'0:100\n'`, `'0:255\n'`
-  * Slider1 (右馬達） sends `'1:[value]\n'` on sliding. Ex: `'1:100\n'`, `'1:255\n'`
+  * Slider0 (左馬達） sends `'a[value]\n'` on sliding. Ex: `'a100\n'`, `'a255\n'`
+  * Slider1 (右馬達） sends `'c[value]\n'` on sliding. Ex: `'c100\n'`, `'c255\n'`
 * Buttons
   * forward, backward, left, right buttons send `'f\n'`, `'b\n'`, `'l\n'`, `'r\n'` respectively **on press in**
   * Each button sends `'s\n'` **on press out**
