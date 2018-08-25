@@ -107,7 +107,7 @@ class Appbar extends Component {
           modalVisible={this.state.modalVisible}/>
         <ActionBar
           backgroundColor={'#3B373C'}
-          title={'學儒工作坊車車'}
+          title={'藍牙遙控車車'}
           leftIconImage={makerIcon}
           leftIconImageStyle={styles.leftIcon}
           leftIconContainerStyle={{width: 55, height: 60}}
